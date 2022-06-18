@@ -1,9 +1,23 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let reversedWord = word.split('').reverse().join('').toLowerCase()
+  if (reversedWord === word){
+    return true;
+  } else {
+    return false;
+  }
 }
 
+console.log(isPalindrome('cat'))
+
+// compare the value of the first index and the last one,
+//    second and second to last, and so on to see if they are equal.
+//    if they are all equal, return true. else, return false
+
 /* 
-  Add your pseudocode here
+  iterate through the word going forward, and then backwards.
+  compare the val;ue of the index going forward the value of the index
+    going backwards
+  if all the values are true, return true, else return false
 */
 
 /*
